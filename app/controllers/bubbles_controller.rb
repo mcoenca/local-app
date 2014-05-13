@@ -1,6 +1,10 @@
 class BubblesController < ApplicationController
 
-	def new
+  def index
+    render 'index'
+  end
 
-	end
+  def new
+    render 'new'
+  end
 end

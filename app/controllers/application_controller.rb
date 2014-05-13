@@ -5,11 +5,8 @@ class ApplicationController < ActionController::Base
   before_action :set_locale
 
 	def set_locale
-  		I18n.locale = params[:locale] || I18n.default_locale
-  		# if I18n.locale == :fr
-    #     I18n.locale = :en
-    #   else
-    #     i18n.locale = :fr
-    #   end
+    #If not set up in params, find it via IP
+  		I18n.locale = params[:locale] || I18n.locale
+      @locale = I18n.locale
 	end
 end

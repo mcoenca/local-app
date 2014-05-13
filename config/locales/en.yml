@@ -1,3 +1,20 @@
+en:
+  localize_app: "I18n_test"
+  en_lang: "Ang"
+  fr_lang: "Fr"
+  bubbles_display: "Available bubbles"
+  want_new_one: "Blow a new bubble"
+  new_bubble: "New Bubble"
+  submit_new_one: "Blow !"
+  back_to_index: "All the bubbles"
+  helpers:
+    label:
+      bubble:
+        title: "Its pet name"
+        text: "How does it feel ?"
+    submit:
+        submit: "Souffle Mais attention a comment est appelle ce tag !"
+
 # Files in the config/locales directory are used for internationalization
 # and are automatically loaded by Rails. If you want to use locales other
 # than English, add the necessary files in this directory.
@@ -13,22 +30,3 @@
 # To use a different locale, set it with `I18n.locale`:
 #
 #     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
-en:
-  hello: "Hello world"
-  new_bubble: "New Bubble"
-  localize_app: "Localize your app with I18n !"
-  bubbles_display: "Here are your bubbles !"
-  title:  "Its little name"
-  text: "How is it feeling today ?"
-  fr_lang: "Change to french with the url !"
-  en_lang: "Change to english with the url !"
-
-  helpers:
-    submit:
-      submit: "Submit !"
