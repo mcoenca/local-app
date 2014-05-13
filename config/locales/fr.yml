@@ -1,0 +1,16 @@
+fr:
+  hello: "Bonjour"
+  new_bubble: "Nouvelle bulle "
+  localize_app: "Internationalise ton application avec I18n !"
+  fr_lang: "Passe en francais "
+  en_lang: "Passe en anglais "
+  want_new_one: "Souffler une nouvelle bulle"
+  submit_new_one: "Souffle !"
+  back_to_index: "Retourner a l'index"
+  helpers:
+    label:
+      bubble:
+        title: "Son petit nom"
+        text: "Comment va-t-elle aujourd'hui ?"
+    submit:
+        submit: "Souffle Mais attention a comment est appelle ce tag !"

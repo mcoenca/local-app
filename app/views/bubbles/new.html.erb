@@ -1,0 +1,27 @@
+  <div class="pure-g">
+  <div class="pure-u-1-5">
+  </div>
+  <div class="pure-u-3-5">
+  <h1><%= t :new_bubble %></h1>
+  <%= form_for :bubble, html: {class: "pure-form pure-form-aligned"} do |f| %>
+  <fieldset>
+    <div class="pure-control-group">
+      <%= f.label :title %>
+      <%= f.text_field :title, placeholder: "Bubbly ?" %>
+    </div>
+    <div class="pure-control-group">
+      <%= f.label :text %>
+      <%= f.text_area :text, placeholder: " 8 - )" %>
+    </div>
+    <div class="pure-controls">
+      <%= f.submit t(:submit_new_one), :class => "pure-button pure-button-primary" %>
+    </div>
+    <div class="pure-controls">
+      <%= link_to t(:back_to_index), {controller: "welcome", action: "index"}, class: "pure-button pure-button-primary" %>
+    </div>
+  </fieldset>
+  <% end %>
+</div>
+
+</div>
+
