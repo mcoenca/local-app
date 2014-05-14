@@ -14,6 +14,8 @@ gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 
+#Use haml
+gem 'haml'
 #Use purecss
 gem 'pure-css-rails', '~> 0.4.2'
 

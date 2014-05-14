@@ -1,0 +1,26 @@
+.pure-menu.pure-menu-open.pure-menu-horizontal
+  = link_to t(:localize_app), '#', class:"pure-menu-heading"
+  %ul
+    %li{:class => @en_class}
+      = link_to t(:en_lang), {locale: 'en'}
+    %li{:class => @fr_class}
+      = link_to t(:fr_lang), {locale: 'fr'}
+.pure-g
+  .pure-u-1-5
+  .pure-u-3-5.small-box-shadow
+    = form_for :bubble, :html => {:class => "pure-form pure-form-aligned"} do |f|
+      %fieldset
+        %legend= t :new_bubble
+        .pure-control-group
+          = f.label :title
+          = f.text_field :title, placeholder: "Bubbly ?"
+        .pure-control-group
+          = f.label :text
+          = f.text_area :text, placeholder: " 8 - )"
+        .pure-controls
+          = f.submit t(:submit_new_one), :class => "pure-button pure-button-primary"
+        .pure-controls
+          = link_to t(:back_to_index), {controller: "bubbles", action: "index"}, class: "pure-button pure-button-primary"
+    %hr/
+    = params.inspect
+
