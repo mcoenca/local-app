@@ -1,7 +1,7 @@
 class CreateBubbles < ActiveRecord::Migration
   def up
     create_table :bubbles do |t|
-      t.column "name", :string, :limit => 15, :null => false
+      t.column "name", :string, :limit => 15, :null => false, :empty => false
       t.text "feeling", :default => " 8 - )", :null=> false, :limit => 120
 
       #t.datetime "created_at"

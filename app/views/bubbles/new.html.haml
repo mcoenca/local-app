@@ -12,11 +12,11 @@
       %fieldset
         %legend= t :new_bubble
         .pure-control-group
-          = f.label :title
-          = f.text_field :title, placeholder: "Bubbly ?"
+          = f.label :name
+          = f.text_field :name, placeholder: "Bubbly ?"
         .pure-control-group
-          = f.label :text
-          = f.text_area :text, placeholder: " 8 - )"
+          = f.label :feeling
+          = f.text_area :feeling, placeholder: " 8 - )"
         .pure-controls
           = f.submit t(:submit_new_one), :class => "pure-button pure-button-primary"
         .pure-controls

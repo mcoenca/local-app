@@ -10,8 +10,8 @@ en:
   helpers:
     label:
       bubble:
-        title: "Its pet name"
-        text: "How does it feel ?"
+        name: "Its pet name"
+        feeling: "How does it feel ?"
     submit:
         submit: "Souffle Mais attention a comment est appelle ce tag !"
 

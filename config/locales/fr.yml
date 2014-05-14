@@ -10,7 +10,7 @@ fr:
   helpers:
     label:
       bubble:
-        title: "Son petit nom"
-        text: "Comment va-t-elle ?"
+        name: "Son petit nom"
+        feeling: "Comment va-t-elle ?"
     submit:
         submit: "Souffle Mais attention a comment est appelle ce tag !"

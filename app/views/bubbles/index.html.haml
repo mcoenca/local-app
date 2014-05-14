@@ -9,8 +9,20 @@
 .pure-g
   .pure-u-1-5
   .pure-u-3-5
-    %h1= t :bubbles_display
-    %p= link_to t(:want_new_one), {controller: 'bubbles', action: 'new'}, class: "pure-button pure-button-primary"
+    %h2= t :bubbles_display
+    %table.pure-table.pure-table-bordered
+      %thead
+        %tr
+          %th #
+          %th Name
+          %th Feeling
+      %tbody
+        - @bubbles.each do |bubble|
+          %tr
+            %th= bubble.id
+            %th= bubble.name
+            %th= bubble.feeling
+    %p= link_to t(:want_new_one), {action: 'new'}, class: "pure-button pure-button-primary"
     %hr
     = params.inspect
     = @locale.inspect
