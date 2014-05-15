@@ -14,6 +14,7 @@ gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 
+#Use rspec
 #Use haml
 gem 'haml'
 #Use purecss
@@ -39,7 +40,7 @@ gem 'spring',        group: :development
 
 # Use unicorn as the app server
 # gem 'unicorn'
-
+  gem 'rspec-rails', '~> 3.0.0.beta'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

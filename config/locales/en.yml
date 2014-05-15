@@ -7,6 +7,7 @@ en:
   new_bubble: "New Bubble"
   submit_new_one: "Blow !"
   back_to_index: "All the bubbles"
+  subject_create_successfully: ! "Subject  %{name} created successfully"
   helpers:
     label:
       bubble:
