@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe BubblesController do
 
-  describe "GET index" do
+  describe "GET index"  do
     it "should render the index template" do
       get :index
       expect(response).to render_template(:index)
@@ -10,9 +10,9 @@ describe BubblesController do
   end
 
   describe "POST create" do
-    it "should redirect to the index page" do
+    it "should redirect to the index page"  do
       post :create, :bubble => {:name => "my bubble", :feeling => "good"}
-      expect(response).to redirect_to(bubbles_path)
+      expect(response).to redirect_to(root_path)
     end
   end
 

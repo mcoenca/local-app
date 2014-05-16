@@ -20,4 +20,10 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  #Overriding default url options in order to always pass the locale in the url
+  # def default_url_options(options={})
+  #   logger.debug "default_url_options is passed options: #{options.inspect}\n"
+  #   { locale: I18n.locale }
+  # end
+
 end

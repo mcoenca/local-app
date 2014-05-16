@@ -13,7 +13,7 @@ class BubblesController < ApplicationController
     @bubble = Bubble.new(bubble_params)
     if @bubble.save
       redirect_to(:action => 'index')
-      flash[:notice] = t(:subject_create_successfully, name: @bubble.name )
+      flash[:notice] = t(:bubble_created_successfully, name: @bubble.name )
     else
       flash[:error] = t(:subject_creation_error)
       render('new')

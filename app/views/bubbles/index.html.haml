@@ -1,29 +1,28 @@
-
 .pure-menu.pure-menu-open.pure-menu-horizontal
   = link_to t(:localize_app), '#', class:"pure-menu-heading"
   %ul
     %li{:class => @en_class}
-      = link_to t(:en_lang), {locale: 'en'}
+      = link_to t('.en_lang'), {locale: 'en'}
     %li{:class => @fr_class}
-      = link_to t(:fr_lang), {locale: 'fr'}
+      = link_to t('.fr_lang'), {locale: 'fr'}
 .pure-g
   .pure-u-1-5
   .pure-u-3-5
-    %h2= t :bubbles_display
+    %h2= t '.bubbles_display'
     .notice= flash[:notice] if !flash[:notice].blank?
     %table.pure-table.pure-table-bordered
       %thead
         %tr
           %th #
-          %th Name
-          %th Feeling
+          %th= t '.name'
+          %th= t '.feeling'
       %tbody
         - @bubbles.each do |bubble|
           %tr
             %th= bubble.id
             %th= bubble.name
             %th= bubble.feeling
-    %p= link_to t(:want_new_one), {action: 'new'}, class: "pure-button pure-button-primary"
+    %p= link_to t('.want_new_one'), {action: 'new'}, class: "pure-button pure-button-primary"
     %hr
     = params.inspect
     = @locale.inspect

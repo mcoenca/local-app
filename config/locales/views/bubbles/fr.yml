@@ -1,0 +1,16 @@
+fr:
+  bubbles:
+    index:
+      localize_app: "I18n_test"
+      en_lang: "Ang"
+      fr_lang: "Fr"
+      bubbles_display: "Bulles disponibles"
+      want_new_one: "Souffler une nouvelle bulle ?"
+    new:
+      localize_app: "I18n_test"
+      en_lang: "Ang"
+      fr_lang: "Fr"
+      new_bubble: "Nouvelle bulle"
+      submit_new_one: "Souffle"
+      back_to_index: "Retourner a l'index"
+      bubble_created_successfully: "La bulle  %{name} a ete cree avec succes"

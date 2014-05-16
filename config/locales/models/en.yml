@@ -1,0 +1,10 @@
+en:
+  activerecord:
+    models:
+        bubble:
+          one: Bubble
+          other: Bubbles
+    attributes:
+      bubble:
+        name: "Pet name"
+        feeling: "Feeling"

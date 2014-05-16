@@ -1,0 +1,16 @@
+en:
+  bubbles:
+    index:
+      localize_app: "I18n_test"
+      en_lang: "En"
+      fr_lang: "Fr"
+      bubbles_display: "Available bubbles"
+      blow_a_new_bubble: "Blow a new bubble"
+    new:
+      localize_app: "I18n_test"
+      en_lang: "En"
+      fr_lang: "Fr"
+      new: "New Bubble"
+      submit_new_one: "Blow !"
+      back_to_index: "All the bubbles"
+      bubble_created_successfully: "Bubble  %{name} created successfully"
