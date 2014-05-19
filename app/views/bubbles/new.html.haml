@@ -11,7 +11,7 @@
   .pure-u-3-5.small-box-shadow
     = form_for :bubble, :html => {:class => "pure-form pure-form-aligned"} do |f|
       %fieldset
-        %legend= t '.new'
+        %legend= t '.new_bubble'
         .pure-control-group
           = f.label :name
           = f.text_field :name, placeholder: "Bubbly ?"

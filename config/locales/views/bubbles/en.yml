@@ -4,7 +4,9 @@ en:
       localize_app: "I18n_test"
       en_lang: "En"
       fr_lang: "Fr"
-      bubbles_display: "Available bubbles"
+      bubbles_display:
+        one: "One bubble available :"
+        other: "%{count} bubbles available :"
       blow_a_new_bubble: "Blow a new bubble"
     new:
       localize_app: "I18n_test"

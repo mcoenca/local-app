@@ -1,5 +1,6 @@
 .pure-menu.pure-menu-open.pure-menu-horizontal
-  = link_to t(:localize_app), '#', class:"pure-menu-heading"
+  = link_to t('.localize_app'), '#', class:"pure-menu-heading"
+  = l Time.now, :format => :long
   %ul
     %li{:class => @en_class}
       = link_to t('.en_lang'), {locale: 'en'}
@@ -8,14 +9,14 @@
 .pure-g
   .pure-u-1-5
   .pure-u-3-5
-    %h2= t '.bubbles_display'
+    %h2= t '.bubbles_display', count: @bubbles.size
     .notice= flash[:notice] if !flash[:notice].blank?
     %table.pure-table.pure-table-bordered
       %thead
         %tr
           %th #
-          %th= t '.name'
-          %th= t '.feeling'
+          %th= t 'activerecord.attributes.bubble.name'
+          %th= t 'activerecord.attributes.bubble.feeling'
       %tbody
         - @bubbles.each do |bubble|
           %tr

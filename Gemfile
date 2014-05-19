@@ -29,6 +29,9 @@ gem 'jbuilder', '~> 2.0'
 
 #Internationalization
 gem 'i18n'
+#Sync with localeapp on the internet
+gem 'localeapp'
+
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
