@@ -10,7 +10,7 @@ module BubblesHelper
     end
   end
 
-  def set_selected
+  def set_selected_l
     if I18n.locale == :en then
       return {:fr_c => '', :en_c => 'pure-menu-selected'}
     else

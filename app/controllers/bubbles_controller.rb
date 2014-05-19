@@ -10,6 +10,9 @@ class BubblesController < ApplicationController
   def new
     @bubble = Bubble.new
   end
+  def add
+    @buble= Bubble.new
+  end
 
   def create
     @bubble = Bubble.new(bubble_params)

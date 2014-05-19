@@ -2,9 +2,9 @@
   = link_to t('.localize_app'), '#', class:"pure-menu-heading"
   = l Time.now, :format => :long
   %ul
-    %li{:class => @en_class}
+    %li{:class => set_selected_l[:en_c]}
       = link_to t('.en_lang'), {locale: 'en'}
-    %li{:class => @fr_class}
+    %li{:class => set_selected_l[:fr_c]}
       = link_to t('.fr_lang'), {locale: 'fr'}
 .pure-g
   .pure-u-1-5
@@ -13,11 +13,11 @@
       %fieldset
         %legend= t '.new_bubble'
         .pure-control-group
-          = f.label :name
-          = f.text_field :name, placeholder: "Bubbly ?"
+        /   = f.label :name
+        = f.text_field :name, placeholder: "Bubbly ?"
         .pure-control-group
-          = f.label :feeling
-          = f.text_area :feeling
+        / = f.label :feeling
+        = f.text_area :feeling
         .pure-controls
           = f.submit t('.submit_new_one'), :class => "pure-button pure-button-primary"
         .pure-controls

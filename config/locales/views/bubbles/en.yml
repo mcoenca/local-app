@@ -12,7 +12,7 @@ en:
       localize_app: "I18n_test"
       en_lang: "En"
       fr_lang: "Fr"
-      new: "New Bubble"
+      new_bubble: "New Bubble"
       submit_new_one: "Blow !"
       back_to_index: "All the bubbles"
       bubble_created_successfully: "Bubble  %{name} created successfully"
