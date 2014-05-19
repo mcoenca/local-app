@@ -20,7 +20,7 @@
       %tbody
         - @bubbles.each do |bubble|
           %tr
-            %th= bubble.id
+            %th= status_tag(bubble.id,{:text => bubble.id.to_s})
             %th= bubble.name
             %th= bubble.feeling
     %p= link_to t('.want_new_one'), {action: 'new'}, class: "pure-button pure-button-primary"
