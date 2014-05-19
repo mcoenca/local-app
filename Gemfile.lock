@@ -106,6 +106,7 @@ GEM
     rake (10.3.1)
     rdoc (4.1.1)
       json (~> 1.4)
+    redis (3.0.6)
     rest-client (1.6.7)
       mime-types (>= 1.16)
     rspec-collection_matchers (0.0.4)
@@ -186,6 +187,7 @@ DEPENDENCIES
   localeapp
   pure-css-rails (~> 0.4.2)
   rails (= 4.1.1)
+  redis
   rspec-rails
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
