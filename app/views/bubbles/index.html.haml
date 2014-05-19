@@ -2,9 +2,9 @@
   = link_to t('.localize_app'), '#', class:"pure-menu-heading"
   = l Time.now, :format => :long
   %ul
-    %li{:class => @en_class}
+    %li{:class => set_selected[:en_c]}
       = link_to t('.en_lang'), {locale: 'en'}
-    %li{:class => @fr_class}
+    %li{:class => set_selected[:fr_c]}
       = link_to t('.fr_lang'), {locale: 'fr'}
 .pure-g
   .pure-u-1-5

@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
-  before_action :set_locale, :set_selected
+  before_action :set_locale
 
 
 	def set_locale
@@ -11,14 +11,7 @@ class ApplicationController < ActionController::Base
       @locale = I18n.locale
 	end
 
-  def set_selected
-    @fr_class = 'pure-menu-selected'
-    @en_class = ''
-    if @locale == :en then
-      @fr_class = ''
-      @en_class = 'pure-menu-selected'
-    end
-  end
+
 
   #Overriding default url options in order to always pass the locale in the url
   # def default_url_options(options={})
