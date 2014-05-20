@@ -9,6 +9,7 @@
 .pure-g
   .pure-u-1-5
   .pure-u-3-5.small-box-shadow
+    = error_message_for(@bubble)
     = form_for :bubble, :html => {:class => "pure-form pure-form-aligned"} do |f|
       %fieldset
         %legend= t '.new_bubble'

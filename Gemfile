@@ -30,7 +30,7 @@ gem 'jbuilder', '~> 2.0'
 #Internationalization
 gem 'i18n'
 #Sync with localeapp on the internet
-# gem 'localeapp'
+#gem 'localeapp'
 #Use another backend for internationalization
 gem 'redis'
 

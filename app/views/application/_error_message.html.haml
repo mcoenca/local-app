@@ -1,0 +1,10 @@
+-if object && object.errors.size >0
+  #errorExplanation
+    %h2= object.errors.size.to_s + ' ' + t('common.error', count: object.errors.size)
+    %ul
+      -object.errors.full_messages.each do |msg|
+        %li= msg
+
+
+
+

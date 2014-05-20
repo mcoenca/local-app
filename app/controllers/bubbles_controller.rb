@@ -10,6 +10,7 @@ class BubblesController < ApplicationController
   def new
     @bubble = Bubble.new
   end
+
   def add
     @buble= Bubble.new
   end

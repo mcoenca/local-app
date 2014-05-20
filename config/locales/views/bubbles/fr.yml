@@ -1,4 +1,8 @@
 fr:
+  common:
+    error:
+      one: "erreur"
+      other: "erreurs"
   bubbles:
     index:
       localize_app: "I18n_test"

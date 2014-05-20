@@ -9,6 +9,7 @@
 .pure-g
   .pure-u-1-5
   .pure-u-3-5
+    = error_message_for(@bubble)
     %h2= t '.bubbles_display', count: @bubbles.size
     .notice= flash[:notice] if !flash[:notice].blank?
     %table.pure-table.pure-table-bordered
