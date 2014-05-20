@@ -4,6 +4,15 @@ fr:
   localize_app: "I18n_test"
   en_lang: "Ang"
   fr_lang: "Fr"
+  not_logged_in: "Non connecté"
+  name: 'Nom de bulle'
+  please_log_in: 'Veuillez vous connecter :'
+  log_in: 'Se connecter'
+  log_out: 'Se déconnecter'
+  invalid_password_name_combination: 'Fausse association Nom/Mot de passe'
+  you_are_now_logged_in: "Vous etes maintenant connecté"
+  you_are_now_logged_out: "Vous etes mainentant déconnecté"
+  welcome_user: "Bienvenue, %{name} !"
   common:
     error:
       one: "erreur"

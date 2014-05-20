@@ -4,6 +4,15 @@ en:
   localize_app: "I18n_test"
   en_lang: "En"
   fr_lang: "Fr"
+  not_logged_in: "Not logged in"
+  name: 'Bubble Name'
+  please_log_in: 'Please log in : '
+  log_in: 'Log in'
+  log_out: 'Log out'
+  invalid_password_name_combination: 'Invalid password name combination'
+  you_are_now_logged_in: "You are now logged in"
+  you_are_now_logged_out: "You are now logged out"
+  welcome_user: "Welcome back, %{name} !"
   common:
     error:
       one: "error"

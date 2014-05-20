@@ -9,7 +9,7 @@ describe Bubble do
 
   # make sure the db can create the bubble record
   it "should be able to create a bubble" do
-    Bubble.create(:name => "my bubble")
+    Bubble.create(:name => "my bubble", :password => '2', :password_confirmation => '2')
     expect(Bubble.count).to eq(1)
     expect(Bubble.first.name).to eq("my bubble")
   end

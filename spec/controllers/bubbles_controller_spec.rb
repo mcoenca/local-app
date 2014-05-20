@@ -11,7 +11,7 @@ describe BubblesController do
 
   describe "POST create" do
     it "should redirect to the index page"  do
-      post :create, :bubble => {:name => "my bubble", :feeling => "good"}
+      post :create, :bubble => {:name => "my bubble", :feeling => "good", :password => "pass1", :password_confirmation => "pass1"}
       expect(response).to redirect_to(root_path)
     end
   end

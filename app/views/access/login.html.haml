@@ -1,0 +1,14 @@
+.pure-g
+  .pure-u-1-5
+  .pure-u-3-5.small-box-shadow
+    =form_tag 'login', :class => "pure-form pure-form-stacked" do
+      %fieldset
+        %legend= t :please_log_in
+        =label_tag t :name
+        =text_field_tag :name
+        %br/
+        =label_tag t :password
+        =password_field_tag :password
+        %br/
+        =submit_tag t :log_in, :class => "pure-button"
+  .pure-u-1-5

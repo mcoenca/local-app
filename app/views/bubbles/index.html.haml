@@ -3,7 +3,6 @@
   .pure-u-3-5
     = error_message_for(@bubble)
     %h2= t '.bubbles_display', count: @bubbles.size
-    .notice= flash[:notice] if !flash[:notice].blank?
     %table.pure-table.pure-table-bordered
       %thead
         %tr
@@ -17,9 +16,4 @@
             %th= bubble.name
             %th= bubble.feeling
     %p= link_to t('.want_new_one'), {action: 'new'}, class: "pure-button pure-button-primary"
-    %hr
-    = params.inspect
-    = @locale.inspect
-    = @fr_class.inspect
-    = @en_class.inspect
   .pure-u-1-5

@@ -1,0 +1,17 @@
+.pure-menu.pure-menu-open.pure-menu-horizontal
+  = link_to t(:localize_app), 'bubbles/index', class:"pure-menu-heading"
+  = l Time.now, :format => :long
+  %ul
+    %li{:class => set_selected_l[:en_c]}
+      = link_to t(:en_lang), {locale: 'en'}
+    %li{:class => set_selected_l[:fr_c]}
+      = link_to t(:fr_lang), {locale: 'fr'}
+    %li
+      -if logged_in
+        = t :welcome_user,logged_in
+        %li= link_to t(:log_out), '/access/logout'
+      -else
+        = t :not_logged_in
+        %li= link_to t(:log_in), '/access/login'
+.notice= flash[:notice] if !flash[:notice].blank?
+%br/

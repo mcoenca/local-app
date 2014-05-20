@@ -12,6 +12,6 @@ describe 'bubbles/new.html.haml' do
     I18n.locale = :fr
     assign(:bubble, Bubble.create(name: 'Bubly'))
     render
-    expect(rendered).to have_selector("input[type=submit][value='Souffle']")
+    expect(rendered).to have_selector("input[type=submit][value='Souffle !']")
   end
 end
