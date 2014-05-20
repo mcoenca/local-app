@@ -1,23 +1,22 @@
 en:
+  password: "password"
+  repeat_password: "Enter password again"
+  localize_app: "I18n_test"
+  en_lang: "En"
+  fr_lang: "Fr"
   common:
     error:
       one: "error"
       other: "errors"
   bubbles:
-      index:
-        localize_app: "I18n_test"
-        en_lang: "En"
-        fr_lang: "Fr"
-        bubbles_display:
-          one: "One bubble available :"
-          other: "%{count} bubbles available :"
-        blow_a_new_bubble: "Blow a new bubble"
-      new:
-        localize_app: "I18n_test"
-        en_lang: "En"
-        fr_lang: "Fr"
-        new_bubble: "New Bubble"
-        submit_new_one: "Blow !"
-        back_to_index: "All the bubbles"
-        bubble_created_successfully: "Bubble  %{name} created successfully"
+    index:
+      bubbles_display:
+        one: "One bubble available :"
+        other: "%{count} bubbles available :"
+      blow_a_new_bubble: "Blow a new bubble"
+    new:
+      new_bubble: "New Bubble"
+      submit_new_one: "Blow !"
+      back_to_index: "All the bubbles"
+      bubble_created_successfully: "Bubble  %{name} created successfully"
 

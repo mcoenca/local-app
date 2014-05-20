@@ -1,6 +1,7 @@
 class Bubble < ActiveRecord::Base
-
-  validates_presence_of :name
+  has_secure_password
+  validates :name, :presence => true, :length => {:within => 4...12}, :uniqueness => true
+  validates_length_of :feeling, :maximum => 30
   # to configure a different table name
   # Don't forget CamelCase vs  _
   # self.table_name = "super_bubbles"

@@ -27,7 +27,7 @@ class BubblesController < ApplicationController
   end
 
   def bubble_params
-    params.require(:bubble).permit(:name, :feeling)
+    params.require(:bubble).permit(:name, :feeling, :password, :password_confirmation)
   end
 
 end

@@ -10,19 +10,23 @@
   .pure-u-1-5
   .pure-u-3-5.small-box-shadow
     = error_message_for(@bubble)
-    = form_for :bubble, :html => {:class => "pure-form pure-form-aligned"} do |f|
+    = form_for :bubble, :html => {:class => "pure-form pure-form-stacked"} do |f|
       %fieldset
         %legend= t '.new_bubble'
-        .pure-control-group
-          = f.label :name
-          = f.text_field :name, placeholder: "Bubbly ?"
-        .pure-control-group
-          = f.label :feeling
-          = f.text_area :feeling
-        .pure-controls
-          = f.submit t('.submit_new_one'), :class => "pure-button pure-button-primary"
-        .pure-controls
-          = link_to t('.back_to_index'), {controller: "bubbles", action: "index"}, class: "pure-button pure-button-primary"
+        / .pure-control-group
+        = f.label :name
+        = f.text_field :name, placeholder: "Bubbly ?"
+        / .pure-control-group
+        = f.label :feeling
+        = f.text_area :feeling
+        / .pure-controls
+        = f.label t :password
+        = f.password_field :password
+        = f.label t :repeat_password
+        = f.password_field :password_confirmation
+        = f.submit t('.submit_new_one'), :class => "pure-button pure-button-primary"
+        / .pure-controls
+        = link_to t('.back_to_index'), {controller: "bubbles", action: "index"}, class: "pure-button"
     %hr/
     = params.inspect
 

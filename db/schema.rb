@@ -11,13 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140514185054) do
+ActiveRecord::Schema.define(version: 20140520185842) do
 
   create_table "bubbles", force: true do |t|
-    t.string   "name",       limit: 15,                     null: false
-    t.text     "feeling",    limit: 120, default: " 8 - )", null: false
+    t.string   "name",            limit: 15,                     null: false
+    t.text     "feeling",         limit: 120, default: " 8 - )", null: false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "password_digest"
   end
 
 end
