@@ -22,10 +22,10 @@ class AccessController < ApplicationController
       session[:name] = authorized_user.name
 
       flash[:notice] = t :you_are_now_logged_in
-      redirect_to(:controller => 'bubbles', :action => 'index')
+      redirect_to bubbles_path
     else
       flash[:notice] = t :invalid_password_name_combination
-      redirect_to(:action => 'login')
+      render 'login'
     end
   end
 
@@ -42,7 +42,7 @@ class AccessController < ApplicationController
   def confirm_logged_in
     unless session[:bubble_id]
       flash[:notice] = t :please_log_in
-      redirect_to 'login'
+      redirect_to access_login_path
       return false
     else
       return true

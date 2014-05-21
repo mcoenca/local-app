@@ -1,12 +1,15 @@
 Rails.application.routes.draw do
+
   get 'access/index'
   get 'access/login'
   get 'access/logout' => 'access#logout'
   post 'access/login' => 'access#attempt_login'
+
   root 'bubbles#index'
-# scope path: "/:locale", locale: /en|fr/ do
-  post 'bubbles/new' => 'bubbles#create'
+
   resources :bubbles
+
+  # scope path: "/:locale", locale: /en|fr/ do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

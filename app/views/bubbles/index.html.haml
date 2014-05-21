@@ -15,5 +15,5 @@
             %th= status_tag(bubble.id,{:text => bubble.id.to_s})
             %th= bubble.name
             %th= bubble.feeling
-    %p= link_to t('.want_new_one'), {action: 'new'}, class: "pure-button pure-button-primary"
+    %p= link_to t('.want_new_one'), new_bubble_path, class: "pure-button pure-button-primary"
   .pure-u-1-5

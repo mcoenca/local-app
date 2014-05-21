@@ -18,7 +18,7 @@ class BubblesController < ApplicationController
   def create
     @bubble = Bubble.new(bubble_params)
     if @bubble.save
-      redirect_to(:action => 'index')
+      redirect_to bubbles_path
       flash[:notice] = t('bubbles.new.bubble_created_successfully', name: @bubble.name )
     else
       flash[:error] = t(:subject_creation_error)
