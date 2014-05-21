@@ -23,6 +23,7 @@ en:
         one: "One bubble available :"
         other: "%{count} bubbles available :"
       blow_a_new_bubble: "Blow a new bubble"
+      want_new_one: "Want to blow a new one ?"
     new:
       new_bubble: "New Bubble"
       submit_new_one: "Blow !"
